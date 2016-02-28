@@ -1,0 +1,18 @@
+{
+	"author": "HTML5 UP",
+	"email": "@n33co",
+	"website": "http://html5up.net",
+	"title": "TXT",
+	"description": "TXT Theme",
+	"url": "html5up-txt",
+	"preview": "themes/html5up-txt/screenshot.png",
+	"templates": {
+		"page": [
+			"home",
+			"archive",
+			"page",
+			"article",
+			"404"
+		]
+	}
+}

@@ -1,0 +1,69 @@
+body {
+	margin-top: 53px;
+}
+
+/* For themes that have fixed headers on top, so they won't interfere with the meanbase header */
+.mb-fixed-top {
+	top: 51px !important;
+}
+
+#mb-headbar .container {
+	max-width: 100%;
+}
+
+#mb-headbar a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#mb-cancel button,
+#mb-trash button,
+#mb-edit button,
+#mb-page-settings button {
+	margin: 5px;
+	padding: 8px 13px;
+	outline: none;
+}
+
+.nav, 
+.pagination, 
+.carousel, 
+.panel-title a { 
+	cursor: pointer; 
+}
+
+.mb-move a {
+	cursor: move;
+}
+
+.alwaysOpen {
+	display: block;
+}
+
+.p-1-right {
+	padding-right: 1em;
+}
+
+.p-1-left {
+	padding-left: 1em;
+}
+
+@media (max-width: 768px) {
+	#mb-cancel,
+	#mb-trash,
+	#mb-edit,
+	#mb-page-settings {
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+	#mb-cancel button,
+	#mb-trash button,
+	#mb-edit button,
+	#mb-page-settings button {
+		box-sizing: border-box;
+		margin: 0;
+		outline: none;
+		width: 100%;
+	}
+}

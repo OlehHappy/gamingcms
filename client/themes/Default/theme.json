@@ -1,0 +1,15 @@
+{
+	"author": "Jon Paul Miles",
+	"email": "codingfriend1@gmail.com",
+	"website": "www.codingfriend.com",
+	"title": "Default Theme",
+	"description": "The default theme for meanbase",
+	"url": "Default",
+	"preview": "themes/Default/screenshot.png",
+	"templates": {
+		"front-page": ["home", "404"],
+		"blog": ["archive"],
+		"page": ["page"],
+		"article": ["article"]
+	}
+}

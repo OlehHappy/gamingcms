@@ -1,0 +1,15 @@
+{
+	"author": "Jon Paul Miles",
+	"email": "codingfriend1@gmail.com",
+	"website": "www.codingfriend.com",
+	"title": "Second Theme",
+	"description": "Another demo theme for meanbase",
+	"url": "SecondTheme",
+	"preview": "themes/SecondTheme/screenshot.png",
+	"templates": {
+		"front-page": ["home", "404"],
+		"blog": ["archive"],
+		"page": ["page"],
+		"article": ["article"]
+	}
+}

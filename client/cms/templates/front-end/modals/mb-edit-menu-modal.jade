@@ -1,0 +1,29 @@
+#editMenuItemModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='editMenuItemLabel', aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal')
+					span(aria-hidden='true') ×
+					span.sr-only Close
+				h4#editMenuItemLabel.modal-title Edit Menu Item
+			.modal-body
+				.form-group
+					label(for="menu-url") Url
+					input.form-control(id="menu-url" ng-model="menuItem.url")
+				.form-group
+					label(for="menu-title") Title
+					input.form-control(id="menu-title" ng-model="menuItem.title")
+				.form-group
+					label(for="menu-classes") CSS Classes
+					input.form-control(id="menu-classes" ng-model="menuItem.classes")
+				.form-group
+					label(for="menu-target") Target
+					select#menu-target(ng-model="menuItem.target").form-control
+						option(value="") none (good for angular)
+						option(value="_self") _self
+						option(value="_blank") _blank
+			.modal-footer
+				button.btn.btn-danger(ng-click="mb.removeMenuItem()" data-dismiss='modal') Delete
+				button.btn.btn-success(ng-click="mb.editMenuItem()" data-dismiss='modal') Save
+				button.btn.btn-primary(ng-click="mb.newMenuItem()" data-dismiss='modal') Save As New
+				button.btn.btn-default(type='button' data-dismiss='modal') Close

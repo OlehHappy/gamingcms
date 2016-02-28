@@ -1,0 +1,26 @@
+doctype html
+html(ng-app="app")
+	head
+		meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+		meta(charset='utf-8')
+		title Login
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		include mb-links
+		script(src="cms/controllers/front-end/loginCtrl.js")
+	body
+		include modals/sign-up-modal
+		.container(ng-controller="loginCtrl")
+			h3 meanbase login
+			form
+				.form-group
+					input.form-control(type='text' placeholder='email')
+				.form-group
+					input.form-control(type='password' placeholder='password')
+				.form-group.text-right
+					a(href="#") Forgot password?
+				.a-6
+					.p-1-right
+						button.btn.btn-primary.form-control(data-toggle='modal' data-target='#signUp') Sign Up
+				.a-6
+					.p-1-left
+						input.btn.btn-success(type='submit' value='Log in').form-control

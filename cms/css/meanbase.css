@@ -1,0 +1,831 @@
+/*
+white: ECF0F1
+black: 2C3E50
+green: 2ECC71;
+dark green: 27AE60;
+dark red: C0392B;
+light red: E74C3C;
+dark blue: 2980B9;
+light blue: 3498DB;
+dark orange: F39C12
+light orange: F1C40F
+
+*/
+
+/* Top Menu Bar */
+
+#head-tool-bar {
+	position: relative;
+	width: 100%;
+	background-color: #2C3E50;
+	padding-left: 1em;
+	padding-right: 1em;
+	z-index: 10;
+}
+
+#meanbase {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#meanbase a {
+	display: block;
+	padding: 0.8em;
+	background-color: #ECF0F1;
+	border-radius: 3px;
+	margin: 3px;
+	text-decoration: none;
+	color: inherit;
+}
+
+#meanbase a:hover {
+	background-color: #2ECC71;
+	color: #ECF0F1;
+}
+
+
+.mb-tools {
+	position: relative;
+	display: inline-block;
+	padding: 0.5em 1.25em;
+	color: #ECF0F1;
+	border: 0;
+	background-color: #2C3E50;
+}
+
+.mb-tools:hover {
+	background-color: #2ECC71;
+	color: #2C3E50;
+}
+
+.mb-tools:before {
+	font-family: 'FontAwesome';
+	font-size: 1.75em;
+}
+
+
+/* Individual tools */
+
+.mb-light-green {
+	background-color: #2ECC71;
+}
+
+
+/* Log in */
+
+#mb-login-info {
+	position: relative;
+	float: right;
+	color: white;
+	padding: 0.25em 0.5em;
+}
+
+#mb-login-info:hover {
+	background-color: #2ECC71;
+}
+
+#mb-login-info li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#mb-login-info .role,
+#mb-login-info .name {
+	text-align: right;
+}
+
+.mb-highlight {
+	outline: 2px solid #2ECC71;
+}
+
+
+/* Drop downs */
+
+.mb-dropdown,
+.mb-dropdown-right {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 6px;
+	margin-top: 1em;
+	background-color: #34495e;
+	color: white;
+	padding: 0.75em;
+	z-index: 10;
+	-webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+}
+
+#mb-new-template .mb-dropdown {
+	width: 130px;
+}
+
+#mb-page-settings .mb-dropdown {
+	width: 480px;
+	text-align: left;
+	z-index: 12;
+}
+
+.mb-dropdown-right {
+	right: 0;
+	left: auto;
+	text-align: center;
+}
+
+.mb-dropdown .mb-6 {
+	padding: 0.5em;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.mb-dropdown:before,
+.mb-dropdown-right:before {
+	content: "";
+	position: absolute;
+	left: 20px;
+	bottom: 100%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 9px 9px 9px;
+	border-color: transparent transparent #34495e transparent;
+}
+
+.mb-dropdown-right:before {
+	left: auto;
+}
+
+.mb-dropdown-right ul,
+.mb-dropdown ul {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.mb-dropdown-right li,
+.mb-dropdown li {
+	padding: 0.35em 1em;
+	border-radius: 3px;
+}
+
+.mb-has-dropdown .role,
+.mb-has-dropdown .name {
+	pointer-events: none;
+}
+
+.mb-dropdown-right li:hover,
+.mb-dropdown li:hover {
+	background-color: #2ECC71;
+}
+
+.mb-visibility,
+.mb-editability,
+.mb-status {
+	padding: 0.5em 0;
+}
+
+
+/* Form inputs */
+
+.mb-input {
+	background-color: transparent;
+	border: 2px solid #27AE60;
+	border-radius: 3px;
+	outline: none;
+	padding: 0.4em 0.4em;
+	font-size: 1.2em;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.mb-input:focus {
+	border-color: #2ECC71;
+}
+
+#mb-users .mb-form-group {
+	padding: 0.5em 1em 0.5em 0;
+	width: 50%;
+}
+
+.mb-user-info {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.mb-calendar {
+	font-size: 1.5em;
+	padding: 0.25em 0.5em;
+}
+
+.mb-calendar,
+.mb-share-option:before,
+.mb-lock:before {
+	font-family: "FontAwesome";
+}
+
+#mb-publish-btn {
+	padding: 0.5em 1em;
+	width: 100%;
+	box-sizing: border-box;
+	color: #ECF0F1;
+	background-color: #27AE60;
+	border: none;
+	border-radius: 3px;
+	margin-top: 0.5em;
+}
+
+#mb-publish-btn:hover {
+	background-color: #2ECC71;
+}
+
+#mb-backend-wrapper {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mb-backend-wrapper h1 {
+	margin: 0.3em 0 0 0;
+}
+
+#mb-backend-wrapper hr {
+	margin: 1em 0 0 0;
+	border: 2px solid #2C3E50;
+}
+
+.mb-panel-head {
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	background-color: #2C3E50;
+}
+
+.mb-panel-head .mb-panel-title {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0.5em;
+}
+
+.mb-panel-righthand {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-align: right;
+	padding: 0.5em;
+}
+
+.mb-6 {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+.mb-4 {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 33%;
+}
+
+.mb-panel {
+	margin-bottom: 0.5em;
+}
+
+.mb-panel button,
+.mb-panel input[type="submit"],
+.mb-button {
+	color: #ECF0F1;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 3px;
+	margin: 2px;
+	outline: none;
+}
+
+.mb-panel button {
+	background-color: #2980B9;
+}
+
+.mb-panel button:hover {
+	background-color: #3498DB;
+}
+
+.mb-panel input[type="submit"] {
+	background-color: #27AE60;
+}
+
+.mb-panel input[type="submit"]:hover {
+	background-color: #2ECC71;
+}
+
+.mb-panel select {
+	background-color: #27AE60;
+	color: #ECF0F1;
+	border: none;
+	font-size: 1.5em;
+	border-radius: 3px;
+}
+
+.mb-panel-body {
+	background-color: #ECF0F1;
+	border: 2px solid #2C3E50;
+	padding: 1em;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	display: none;
+}
+
+.mb-panel-body.mb-panel-body-open {
+	display: block
+}
+
+.mb-form-group {
+	position: relative;
+	display: inline-block;
+}
+
+input[type=email].mb-email + label,
+input[type=text].mb-text + label,
+input[type=url].mb-url + label,
+input[type=tel].mb-tel + label,
+input[type=search].mb-search + label,
+input[type=number].mb-number + label,
+input[type=password].mb-password + label,
+input[type=hidden].mb-hidden + label {
+	position: absolute;
+	font-size: 19px;
+	top: 4px;
+	color: #ddd;
+	left: 12px;
+}
+
+input.mb-with-icon {
+	padding-left: 3em;
+}
+
+input[type=radio].mb-radio.mb-radio,
+input[type=checkbox].mb-checkbox.mb-checkbox {
+	display: none;
+}
+
+input[type=radio].mb-radio + label,
+input[type=checkbox].mb-checkbox + label {
+	font-size: 1.3em;
+	font-family: 'Montserrat', sans-serif;
+	width: 250px;
+}
+
+input[type=radio].mb-radio + label:before,
+input[type=checkbox].mb-checkbox + label:before {
+	display: inline-block; 
+    vertical-align: middle; 
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    color: #2C3E50;
+    margin-right: 0.5em;
+}
+
+input[type=radio].mb-radio + label:before {
+    content: "\f10c";  
+}
+
+input[type=checkbox].mb-checkbox + label:before {
+    content: "\f0c8";  
+}
+
+input[type=radio].mb-radio:checked + label:before {
+    content: "\f05d";
+}
+
+input[type=checkbox].mb-checkbox:checked + label:before {
+    content:"\f14a";
+}
+
+button.mb-toggle-active {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	color: #27AE60;
+	border-radius: 0;
+	font-size: 2.2em;
+}
+
+button.mb-toggle-active:hover {
+	background-color: transparent;
+}
+
+#mb-user-search {
+	border: 2px solid #2C3E50;
+	color: #27AE60;
+	border-radius: 3px;
+	padding: 0.5em 1em;
+	padding-left: 3em;
+	outline: none;
+	width: 100%;
+}
+
+#mb-user-search + label:before {
+	color: #2C3E50;
+}
+
+#mb-form-group-user-search {
+	margin: 1em 0;
+	width: 100%;
+}
+
+input[type=search].mb-search + label:before {
+	font-family: FontAwesome;
+	content: '\f002';
+	color: #27AE60;
+}
+
+.mb-panel-image-thumbnail {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	border: 2px solid #27AE60;
+	background-color: #ECF0F1;
+}
+
+.mb-user-name {
+	display: inline-block;
+	vertical-align: middle;
+	color: #ECF0F1;
+	padding-left: 0.5em;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.mb-user-info-date {
+	font-size: 0.8em;
+}
+
+.mb-user-gravatar img {
+	width: 40px;
+	height: 40px;
+}
+
+button.mb-user-gravatar-choose {
+	font-size: 0.75em;
+	padding: 0.5em;
+}
+
+button.mb-delete-user {
+	background-color: #C0392B;
+}
+
+button.mb-delete-user:hover {
+	background-color: #E74C3C;
+}
+
+.mb-3 {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	margin: 0;
+}
+
+.mb-align-right {
+	text-align: right;
+}
+
+.mb-user-righthand {
+	color: #ECF0F1;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.mb-user-righthand i {
+	font-size: 1.5em;
+	vertical-align: middle;
+	padding-left: 0.5em;
+	padding-right: 0.25em;
+	pointer-events: none;
+}
+
+#mb-delete-user-role {
+	background-color: #C0392B;
+}
+
+#mb-delete-user-role:hover {
+	background-color: #E74C3C;
+}
+
+.mb-save-delete-controls {
+	padding-top: 1em;
+}
+
+/* SC Theme Options */
+
+.mb-theme img {
+	cursor: pointer;
+}
+
+.mb-theme-option {
+	padding: 1em;
+}
+
+.mb-theme-buttons {
+	padding: 1em 0;
+}
+
+.mb-theme-title {
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0.5em;
+	height: 75px;
+}
+
+.mb-theme-preview img {
+	max-width: 100%;
+	height: auto;
+}
+
+.mb-theme-delete {
+	background-color: #C0392B;
+}
+
+.mb-theme-delete:hover {
+	background-color: #E74C3C;
+}
+
+.mb-theme-activate {
+	background-color: #27AE60;
+}
+
+.mb-theme-activate:hover {
+	background-color: #2ECC71;
+}
+
+.mb-theme {
+	padding: 1em;
+}
+
+
+/* Login */
+
+#mb-login-wrapper {
+	text-align: center;
+}
+
+#mb-login-wrapper .mb-form-box {
+	display: inline-block;
+	width: 25%;
+	padding: 1em;
+	margin-top: 50px;
+	text-align: left;
+	border-radius: 3px;
+	background-color: #2C3E50;
+}
+
+#mb-login-wrapper #login-submit {
+	background-color: #27AE60;
+	display: inline-block;
+}
+
+#mb-login-wrapper #login-submit:hover {
+	background-color: #2ECC71;
+}
+
+#mb-login-wrapper .mb-input {
+	color: #2ECC71;
+}
+
+
+.mb-sign-up-link {
+	float: right;
+}
+
+.mb-sign-up-link:hover {
+	text-decoration: none;
+}
+
+.mb-sign-up-link button {
+	display: inline-block;
+	background-color: #2980B9;
+}
+
+.mb-sign-up-link button:hover {
+	background-color: #3498DB;
+}
+
+.mb-forgot-password {
+	text-align: right;
+}
+
+#mb-forgot-password-button {
+	display: inline-block;
+	background-color: transparent;
+	padding-top: 0;
+	margin-top: 0;
+	color: #ECF0F1;
+	text-align: right;
+}
+
+
+
+.mb-hidden {
+	display: none;
+}
+
+[contenteditable="true"] {
+	outline: none;
+}
+
+[contenteditable="true"]:hover,
+[contenteditable="true"]:focus {
+	outline: 2px solid #2ECC71;
+	outline-offset: 6px;
+}
+
+
+a[contenteditable="true"]:hover,
+a[contenteditable="true"]:focus {
+	outline-offset: 0;
+}
+
+.mb-contents-moving a[contenteditable="true"]:hover,
+.mb-contents-moving a[contenteditable="true"]:focus {
+	outline: none;
+}
+
+.mb-currently-moving {
+	outline: 2px solid #2ECC71;
+}
+
+.mb-file-drop-zone {
+	border: dotted 3px lightgray;
+	padding: 3em;
+	color: darkgray;
+}
+
+.mb-file-drop-zone:hover {
+	background-color: lightgray;
+	color: white;
+}
+
+.mb-theme-controls {
+	padding-top: 1em;
+}
+
+.mb-active-theme {
+	padding: 1em;
+}
+
+.a-6 > .form-group {
+	padding: 1em 0 0;
+	margin-bottom: 0;
+}
+
+/* Bootstrap */
+button.btn {
+	margin-left: 0.5em;
+}
+
+.sortable-ghost {
+	background-color: #2ECC71;
+}
+
+#sortable-head li {
+	z-index: 3;
+}
+
+.mb-p-25 {
+	padding: 0.25em 0;
+}
+
+.mb-p-1 {
+	padding: 1em;
+}
+
+.mb-dark-panel {
+	background-color: #2C3E50;
+	border: 1px solid #2C3E50
+}
+
+.mb-dark-panel .panel-body {
+	background-color: #ECF0F1;
+}
+
+.mb-panel-select {
+	background-color: #27AE60;
+	color: #ECF0F1;
+	border: none;
+	font-size: 1.5em;
+	border-radius: 3px;
+}
+
+.mb-file-center {
+	margin-left: 90px;
+}
+
+.modal-xl {
+	min-width: 90%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.mb-add-menu-item:hover {
+	outline: 2px solid #2ECC71;
+}
+
+.mb-add-menu-item i {
+	color: #2ECC71;
+}
+
+.mb-edit-menu-item:hover {
+	outline: 2px solid #2ECC71;
+}
+
+.mb-edit-menu-item i {
+	color: #F1C40F;
+}
+
+.mb-edit-menu-item:hover {
+	/*background-color: #F39C12;*/
+}
+
+/* Media */
+
+.mb-media-item {
+	box-sizing: border-box;
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 5px;
+	background-color: #eee;
+	height: 200px;
+}
+
+.mb-media-item img {
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: black;
+}
+
+.mb-image-display {
+	text-align: center;
+}
+
+.mb-image-display img {
+	display: inline-block;
+	max-width: 90%;
+	max-height: 300px;
+}
+
+.mb-toggle-switch {
+	margin-top: -1em;
+}
+
+.mb-toggle-switch input {
+	display:none;
+}
+
+.mb-toggle-switch input + span:before {
+  font-family: 'FontAwesome';
+  font-size: 2.75em;
+  content: "\f204"; /* off */
+  color: #2C3E50;
+}
+
+.mb-toggle-switch input:checked + span:before {
+	content: "\f205"; /* on */
+	color: #27AE60;
+}
+
+@media screen and (max-width: 640px) {
+	#mb-users .mb-form-group {
+		width: 100%;
+	}
+
+	.mb-3 {
+		width: 100%;
+	}
+
+	.mb-6 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mb-4 {
+		width: 100%;
+	}
+
+	#mb-page-settings .mb-dropdown {
+		width: 300px;
+	}
+}
+
+.app {
+	padding: 1em;
+}
+
+.apps-wrapper {
+	padding: 0 3em;
+}
